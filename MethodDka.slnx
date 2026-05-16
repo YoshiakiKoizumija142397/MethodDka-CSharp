@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../MethodDkaCore/MethodDkaCore/MethodDkaCore.csproj" />
+  <Project Path="../MethodDkaWPF.App/MethodDkaWPF.App/MethodDkaWPF.App.csproj" />
+</Solution>
