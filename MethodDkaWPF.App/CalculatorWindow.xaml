@@ -1,0 +1,34 @@
+﻿<Window x:Class="MethodDkaWPF.App.CalculatorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MethodDka Calculator" Height="600" Width="500">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+
+            <!-- 最高次数 -->
+            <TextBlock Text="最高次数" FontSize="16" Margin="0,0,0,5"/>
+            <TextBox x:Name="MaxDegreeTextBox" Width="100" FontSize="16"/>
+
+            <!-- 最高次数を設定 -->
+            <Button Content="最高次数を設定"
+                    Margin="0,10,0,10"
+                    FontSize="16"
+                    Click="CreateFields_Click"/>
+
+            <!-- 係数入力欄を動的に生成する領域 -->
+            <StackPanel x:Name="CoefficientPanel" />
+
+            <!-- 計算開始 -->
+            <Button Content="計算開始"
+                    Margin="0,20,0,10"
+                    FontSize="16"
+                    Click="CalculateButton_Click"/>
+
+            <!-- 結果表示 -->
+            <ListBox x:Name="ResultsListBox"
+                     Height="200"
+                     FontSize="16"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
